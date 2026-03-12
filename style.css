@@ -320,70 +320,56 @@ button { font-family: inherit; }
   .btn-glass:hover { background: rgba(255,255,255,0.1); }
 }
 
-/* ── Screenshots (3D Fan) ────────────────────────────────────── */
+/* ── Screenshots (Staggered Cascade) ─────────────────────────── */
 .screenshots {
   padding: 20px 0 100px;
   overflow: hidden;
 }
 
-.screenshots-fan {
+.screenshots-cascade {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 520px;
-  perspective: 1200px;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.fan-card {
-  position: absolute;
+.cascade-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.cascade-left { padding-top: 60px; }
+.cascade-right { padding-top: 40px; }
+
+.cascade-card {
   width: 220px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform 0.6s var(--ease), box-shadow 0.6s var(--ease);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-  will-change: transform;
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
 }
 
-.fan-card img { width: 100%; height: auto; display: block; }
-
-/* Center hero card — largest, front */
-.fan-card-hero {
-  width: 250px;
-  z-index: 5;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+.cascade-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.12);
 }
-.fan-card-hero:hover { transform: translateY(-12px) scale(1.04); }
 
-/* Inner left */
-.fan-card-2 {
-  z-index: 4;
-  transform: translateX(-200px) rotateY(8deg) scale(0.92);
-}
-.fan-card-2:hover { transform: translateX(-200px) rotateY(8deg) scale(0.95) translateY(-8px); }
+.cascade-card img { width: 100%; height: auto; display: block; }
 
-/* Inner right */
-.fan-card-4 {
-  z-index: 4;
-  transform: translateX(200px) rotateY(-8deg) scale(0.92);
+.cascade-hero {
+  width: 260px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.12);
 }
-.fan-card-4:hover { transform: translateX(200px) rotateY(-8deg) scale(0.95) translateY(-8px); }
 
-/* Outer left */
-.fan-card-1 {
-  z-index: 3;
-  transform: translateX(-380px) rotateY(14deg) scale(0.82);
-  opacity: 0.8;
+.cascade-hero:hover {
+  transform: translateY(-14px) scale(1.03);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.16);
 }
-.fan-card-1:hover { transform: translateX(-380px) rotateY(14deg) scale(0.85) translateY(-6px); }
-
-/* Outer right */
-.fan-card-5 {
-  z-index: 3;
-  transform: translateX(380px) rotateY(-14deg) scale(0.82);
-  opacity: 0.8;
-}
-.fan-card-5:hover { transform: translateX(380px) rotateY(-14deg) scale(0.85) translateY(-6px); }
 
 /* ── Stats Row ───────────────────────────────────────────────── */
 .stats {
@@ -877,16 +863,11 @@ button { font-family: inherit; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .features-grid { grid-template-columns: 1fr; }
 
-  .screenshots-fan {
-    height: 400px;
-    perspective: 800px;
-  }
-  .fan-card { width: 160px; }
-  .fan-card-hero { width: 190px; }
-  .fan-card-2 { transform: translateX(-140px) rotateY(8deg) scale(0.9); }
-  .fan-card-4 { transform: translateX(140px) rotateY(-8deg) scale(0.9); }
-  .fan-card-1 { transform: translateX(-260px) rotateY(14deg) scale(0.78); }
-  .fan-card-5 { transform: translateX(260px) rotateY(-14deg) scale(0.78); }
+  .screenshots-cascade { gap: 12px; }
+  .cascade-card { width: 160px; }
+  .cascade-hero { width: 190px; }
+  .cascade-left { padding-top: 40px; }
+  .cascade-right { padding-top: 24px; }
 
   .personas-layout {
     grid-template-columns: 1fr;
