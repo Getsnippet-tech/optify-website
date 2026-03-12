@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optify — AI Photo Editor & Personas</title>
+  <meta name="description" content="Transform your photos with AI. 130+ cinematic persona styles, virtual try-on, background removal, and more. Every photo, its best version.">
+  <meta property="og:title" content="Optify — AI Photo Editor & Personas">
+  <meta property="og:description" content="Transform your photos with AI. 130+ cinematic persona styles, virtual try-on, background removal, and more.">
+  <meta property="og:image" content="images/app-icon.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/app-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/app-icon.png" alt="Optify" width="32" height="32">
+        Optify
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#personas">Personas</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://apps.apple.com/app/id6759665090" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-chip reveal">
+        <span class="hero-chip-dot"></span>
+        Powered by AI
+      </div>
+      <h1 class="reveal reveal-delay-1">Every photo,<br>its <span class="gradient-text">best version.</span></h1>
+      <p class="reveal reveal-delay-2">AI-powered photo editing with 130+ cinematic persona styles, virtual try-on, background removal, and professional tools.</p>
+      <div class="hero-buttons reveal reveal-delay-3">
+        <a href="https://apps.apple.com/app/id6759665090" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.7 12.56 5.7C13.34 5.7 14.82 4.62 16.38 4.8C17.04 4.83 18.89 5.08 20.06 6.82C19.95 6.89 17.58 8.27 17.61 11.14C17.64 14.57 20.59 15.7 20.62 15.71C20.59 15.79 20.14 17.37 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+          Download on App Store
+        </a>
+        <a href="#features" class="btn btn-glass">Explore Features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="screenshots">
+    <div class="screenshots-fan">
+      <div class="fan-card fan-card-1 reveal"><img src="images/screenshots/tools.png" alt="Quick Tools" loading="lazy"></div>
+      <div class="fan-card fan-card-2 reveal reveal-delay-1"><img src="images/screenshots/personas-male.png" alt="AI Personas" loading="lazy"></div>
+      <div class="fan-card fan-card-hero reveal reveal-delay-2"><img src="images/screenshots/home.png" alt="Optify Studio" loading="lazy"></div>
+      <div class="fan-card fan-card-4 reveal reveal-delay-3"><img src="images/screenshots/personas-female.png" alt="AI Personas" loading="lazy"></div>
+      <div class="fan-card fan-card-5 reveal reveal-delay-4"><img src="images/screenshots/splash.png" alt="Optify" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number">130+</div>
+          <div class="stat-label">AI Persona Styles</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-number">10s</div>
+          <div class="stat-label">Avg. Processing</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-number">4x</div>
+          <div class="stat-label">Upscale Resolution</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-number">Free</div>
+          <div class="stat-label">Personas Included</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-eyebrow reveal">Features</div>
+      <h2 class="section-title reveal reveal-delay-1">Professional tools,<br>one tap away.</h2>
+      <p class="section-desc reveal reveal-delay-2">Everything you need to transform your photos — powered by the latest AI models.</p>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-emoji" style="background:rgba(123,175,142,0.1)">🎭</div>
+          <h3>AI Personas</h3>
+          <p>130+ cinematic styles. Upload a selfie and transform into Red Carpet, Yacht Party, Fashion, Horoscope, and more.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-emoji" style="background:rgba(212,165,116,0.1)">👗</div>
+          <h3>Virtual Try-On</h3>
+          <p>See how clothes look on you before buying. Upload your photo and a garment — AI does the rest.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-emoji" style="background:rgba(52,211,153,0.1)">🖼️</div>
+          <h3>Background Remove</h3>
+          <p>Clean background removal in seconds. Replace with any scene or keep it transparent.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-emoji" style="background:rgba(248,113,113,0.1)">🧹</div>
+          <h3>Object Cleanup</h3>
+          <p>Seamlessly remove unwanted objects, people, or distractions from your photos.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-emoji" style="background:rgba(251,191,36,0.1)">🔍</div>
+          <h3>Upscale</h3>
+          <p>Enhance resolution up to 4x. Bring back detail and sharpness to any photo.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-5">
+          <div class="feature-emoji" style="background:rgba(139,92,246,0.1)">🎨</div>
+          <h3>Color Grade</h3>
+          <p>Apply cinematic color tones and professional grading to set the perfect mood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personas -->
+  <section class="personas" id="personas">
+    <div class="container">
+      <div class="section-eyebrow reveal">AI Personas</div>
+      <h2 class="section-title reveal reveal-delay-1">Transform yourself into<br>anyone, anywhere.</h2>
+      <p class="section-desc reveal reveal-delay-2">Over 130 cinematic styles across fashion, horoscopes, photo shoots, and pop culture.</p>
+      <div class="personas-layout">
+        <div class="personas-phone reveal">
+          <img src="images/screenshots/personas-female.png" alt="AI Personas" loading="lazy">
+        </div>
+        <div class="personas-content reveal reveal-delay-2">
+          <h3>Your face, infinite possibilities</h3>
+          <p>Upload a single selfie and watch as AI transforms you into stunning cinematic looks. From glamorous Red Carpet events to mythical Horoscope portraits — each style is crafted with professional quality.</p>
+          <div class="tags">
+            <span class="tag">Red Carpet</span>
+            <span class="tag">Yacht Party</span>
+            <span class="tag">Roaring 20s</span>
+            <span class="tag">Horoscope</span>
+            <span class="tag">Beach</span>
+            <span class="tag">Fashion</span>
+            <span class="tag">Cinematic</span>
+            <span class="tag">Anime</span>
+            <span class="tag">Victorian</span>
+            <span class="tag">+120 more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Ready to transform<br>your photos?</h2>
+        <p>Download Optify free and discover what AI can do for your photos.</p>
+        <a href="https://apps.apple.com/app/id6759665090" class="btn-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.7 12.56 5.7C13.34 5.7 14.82 4.62 16.38 4.8C17.04 4.83 18.89 5.08 20.06 6.82C19.95 6.89 17.58 8.27 17.61 11.14C17.64 14.57 20.59 15.7 20.62 15.71C20.59 15.79 20.14 17.37 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+          Download on App Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-title">
+            <img src="images/app-icon.png" alt="" width="24" height="24"> Optify
+          </div>
+          <p>AI-powered photo editing. Every photo, its best version.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Product</h5>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#personas">AI Personas</a></li>
+              <li><a href="https://apps.apple.com/app/id6759665090">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="support.html">Help & FAQ</a></li>
+              <li><a href="mailto:optify@getsnippet.co">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Optify. All rights reserved.</span>
+        <span>optify@getsnippet.co</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Scroll reveal animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

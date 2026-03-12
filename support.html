@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Optify</title>
+  <meta name="description" content="Get help with Optify. Find answers to common questions or contact our support team.">
+  <link rel="icon" href="images/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-orbs">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="images/app-icon.png" alt="Optify" width="32" height="32">
+        Optify
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="support-page">
+    <div class="container">
+      <h1>Help & Support</h1>
+      <p class="subtitle">Find answers to common questions or reach out to our team.</p>
+
+      <div class="contact-card">
+        <div class="contact-icon">&#9993;</div>
+        <div>
+          <h3>Contact Us</h3>
+          <p>Email us at <a href="mailto:optify@getsnippet.co">optify@getsnippet.co</a> — we usually respond within 24 hours.</p>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">What is Optify? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Optify is an AI-powered photo editing app that lets you enhance, transform, and create stunning images using cutting-edge AI models. From background removal to virtual try-on, Optify handles it all.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is Optify free to use? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Optify offers a free plan that includes access to AI Personas. To unlock all editing tools — including background removal, upscaling, object cleanup, and more — you can upgrade to Pro.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What are AI Personas? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">AI Personas let you transform your photos into 130+ cinematic styles — from Red Carpet and Yacht Party to Horoscope signs and fashion looks. Upload a selfie and watch the magic happen.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How does Virtual Try-On work? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Upload a photo of yourself and a clothing item, and our AI will realistically place the garment on you. Great for shopping or styling experiments. This is a Pro feature.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What image formats are supported? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Optify supports JPEG, PNG, and HEIC images. For best results, use high-resolution photos with good lighting.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long does processing take? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Most edits complete in 10–30 seconds depending on the operation. Complex tasks like AI Personas or Virtual Try-On may take up to 60 seconds.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Are my photos stored or shared? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Your photos are processed securely and stored temporarily to deliver results. We never share your images with third parties. See our <a href="privacy.html">Privacy Policy</a> for full details.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How do I cancel my subscription? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">You can manage or cancel your Pro subscription anytime through your device's app store settings (App Store &rarr; Apple ID &rarr; Subscriptions, or Google Play &rarr; Subscriptions).</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">I found a bug. How do I report it? <span class="faq-chevron">&#9662;</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">We'd love to hear from you! Tap "Send Feedback" in the app's Settings, or email us directly at <a href="mailto:optify@getsnippet.co">optify@getsnippet.co</a>.</div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 Optify. All rights reserved.</span>
+        <span><a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle')?.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.parentElement;
+        var answer = item.querySelector('.faq-answer');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
