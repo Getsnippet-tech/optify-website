@@ -27,7 +27,7 @@
   <main class="legal-page">
     <div class="container">
       <h1>Privacy Policy</h1>
-      <p class="legal-meta">Last updated: March 2026</p>
+      <p class="legal-meta">Last updated: May 2026</p>
 
       <h2>1. Information We Collect</h2>
       <p>We collect the following types of information:</p>
@@ -49,24 +49,34 @@
         <li>Detect and prevent fraud or abuse</li>
       </ul>
 
-      <h2>3. Image Processing & Storage</h2>
-      <p>When you upload an image, it is:</p>
+      <h2>3. AI Image Processing — What We Send, and Where</h2>
+      <p>When you tap an editing tool, the following data is sent to third-party AI services on your behalf so the requested edit can be performed:</p>
+      <p><strong>Data sent:</strong></p>
       <ul>
-        <li>Transmitted securely over HTTPS to our servers</li>
-        <li>Processed by our AI pipeline to perform the requested edit</li>
-        <li>Stored temporarily in secure cloud storage (Google Cloud) with time-limited access URLs</li>
-        <li>Not used to train AI models</li>
-        <li>Not shared with third parties for their own purposes</li>
+        <li>The image(s) you uploaded for that edit</li>
+        <li>Any optional text instructions you entered</li>
+        <li>Internal job metadata (edit type, parameters)</li>
       </ul>
-      <p>Processed images are retained for a limited time. You can request deletion at any time.</p>
+      <p>No account identifiers, contact information, location, device identifiers, or payment information is sent to these AI providers.</p>
 
-      <h2>4. Third-Party Services</h2>
+      <p><strong>Who receives the data, and what they do with it:</strong></p>
       <ul>
-        <li><strong>Supabase:</strong> Authentication and database</li>
-        <li><strong>Google Cloud Storage:</strong> Secure image storage</li>
-        <li><strong>OpenAI, BFL, Replicate:</strong> AI image processing</li>
-        <li><strong>RevenueCat:</strong> Subscription management</li>
-        <li><strong>Sentry:</strong> Error monitoring and crash reporting</li>
+        <li><strong>OpenAI</strong> (api.openai.com) — runs the image-analysis and image-generation models that produce your edited result. OpenAI does not use API inputs to train their models per their published API data policy. <a href="https://openai.com/policies/privacy-policy" rel="nofollow">Privacy policy</a></li>
+        <li><strong>Black Forest Labs (BFL)</strong> (api.bfl.ai) — runs the FLUX models for some editing flows. BFL does not retain or train on API inputs per their commercial terms. <a href="https://blackforestlabs.ai/privacy-policy" rel="nofollow">Privacy policy</a></li>
+        <li><strong>Replicate</strong> (api.replicate.com) — runs the utility models (background removal, upscaling, face restoration). Inputs are retained briefly to deliver the output and then deleted. <a href="https://replicate.com/privacy" rel="nofollow">Privacy policy</a></li>
+        <li><strong>FAL</strong> (fal.ai) — runs the same model family as a fallback when OpenAI is unavailable. Same no-training policy. <a href="https://fal.ai/privacy" rel="nofollow">Privacy policy</a></li>
+      </ul>
+      <p>We have verified that each provider above contractually protects your data at least to the same standard described in this policy. By tapping an editing tool, you grant us permission to transmit your image and prompt to whichever of the above services we route the job to. You can withdraw consent at any time by signing out or deleting your account.</p>
+
+      <h2>4. Other Third-Party Services</h2>
+      <p>We use the following third-party services to run the App. These do <strong>NOT</strong> receive the contents of your edited images:</p>
+      <ul>
+        <li><strong>Supabase:</strong> account, authentication, and our own database (your email, display name, edit history, subscription tier). <a href="https://supabase.com/privacy" rel="nofollow">Privacy</a></li>
+        <li><strong>Google Cloud Storage:</strong> temporary storage of your input and output images so the AI services can fetch them via signed URLs. Files are retained 30 days then auto-deleted. <a href="https://cloud.google.com/terms/cloud-privacy-notice" rel="nofollow">Privacy</a></li>
+        <li><strong>RevenueCat:</strong> subscription state. Receives only your user ID and purchase events; never your photos or prompts. <a href="https://www.revenuecat.com/privacy" rel="nofollow">Privacy</a></li>
+        <li><strong>Apple App Store / Google Play:</strong> payment processing. We never see your card details.</li>
+        <li><strong>Sentry:</strong> anonymous crash reports. Includes a stack trace, app version, OS version, and your Supabase user ID. Never includes your photos or prompts. <a href="https://sentry.io/privacy" rel="nofollow">Privacy</a></li>
+        <li><strong>Firebase Cloud Messaging:</strong> push notifications when an edit completes. Receives a device token; never your photos.</li>
       </ul>
 
       <h2>5. Data Security</h2>
