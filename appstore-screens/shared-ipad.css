@@ -1,0 +1,164 @@
+/* ═══════════════════════════════════════════════════════════════
+   App Store Screenshots — iPad Shared Styles
+   Target: 2064 × 2752px (iPad Pro 12.9")
+   Uses vw/vh units so it scales at any render size
+   ═══════════════════════════════════════════════════════════════ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Frame ──────────────────────────────────────────────────── */
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Background ────────────────────────────────────────────── */
+.frame-bg {
+  position: absolute;
+  inset: 0;
+  background: #FBF8F1;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10vw);
+}
+
+.orb-1 {
+  width: 45vw; height: 45vw;
+  background: rgba(123, 175, 142, 0.18);
+  top: -8vw; right: -6vw;
+}
+
+.orb-2 {
+  width: 35vw; height: 35vw;
+  background: rgba(212, 165, 116, 0.12);
+  bottom: 8vh; left: -10vw;
+}
+
+/* ── Content ───────────────────────────────────────────────── */
+.frame-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5vh 5vw 0;
+}
+
+/* ── Headline ──────────────────────────────────────────────── */
+.headline {
+  text-align: center;
+  margin-bottom: 0.5vh;
+}
+
+.headline h1 {
+  font-size: 7vw;
+  font-weight: 800;
+  letter-spacing: -0.25vw;
+  line-height: 1.05;
+  color: #1a1a1a;
+}
+
+.accent {
+  background: linear-gradient(135deg, #5E8A6E, #7BAF8E, #D4A574);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 2.4vw;
+  color: #888;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 70vw;
+  margin-bottom: 2vh;
+}
+
+/* ── Bottom bar ────────────────────────────────────────────── */
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 0.8vh 2.5vw;
+  background: rgba(123, 175, 142, 0.1);
+  border: 1px solid rgba(123, 175, 142, 0.2);
+  border-radius: 999px;
+  margin-bottom: 1.5vh;
+}
+
+.bottom-bar .dot {
+  width: 1vw; height: 1vw;
+  border-radius: 50%;
+  background: #7BAF8E;
+}
+
+.bottom-bar span {
+  font-size: 2vw;
+  font-weight: 600;
+  color: #5E8A6E;
+}
+
+/* ── Phone mockup ──────────────────────────────────────────── */
+.phone-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  perspective: 60vw;
+}
+
+.phone {
+  position: relative;
+  width: 55vw;
+  border-radius: 3.5vw;
+  overflow: hidden;
+  transform: rotateY(-7deg) rotateX(3deg) rotateZ(2deg) translateY(1vh);
+  transform-style: preserve-3d;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.05),
+    -0.4vw 1.8vh 4vw rgba(0,0,0,0.1),
+    -0.8vw 3.5vh 7vw rgba(0,0,0,0.07);
+}
+
+.phone img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.phone::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+  pointer-events: none;
+  border-radius: 3.5vw;
+}
+
+/* Alternate tilt */
+.tilt-right .phone {
+  transform: rotateY(7deg) rotateX(3deg) rotateZ(-2deg) translateY(1vh);
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.05),
+    0.4vw 1.8vh 4vw rgba(0,0,0,0.1),
+    0.8vw 3.5vh 7vw rgba(0,0,0,0.07);
+}
+
+.tilt-right .phone::after {
+  background: linear-gradient(225deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+}

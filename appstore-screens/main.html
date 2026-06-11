@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App Store Screenshots — Overview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+      background: #F3EDE4;
+      color: #1a1a1a;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: flex;
+      gap: 32px;
+      overflow-x: auto;
+      padding-bottom: 40px;
+    }
+
+    .screen-item {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .screen-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #5E8A6E;
+      letter-spacing: 0.5px;
+    }
+
+    .screen-link {
+      display: block;
+      text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .screen-link:hover {
+      transform: translateY(-8px) scale(1.01);
+    }
+
+    iframe {
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      pointer-events: none;
+    }
+
+    .screen-edit {
+      display: inline-block;
+      padding: 8px 20px;
+      background: rgba(123, 175, 142, 0.12);
+      border: 1px solid rgba(123, 175, 142, 0.3);
+      border-radius: 999px;
+      color: #5E8A6E;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .screen-edit:hover {
+      background: rgba(123, 175, 142, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .info {
+      margin-top: 40px;
+      padding: 20px 24px;
+      background: rgba(123, 175, 142, 0.06);
+      border: 1px solid rgba(123, 175, 142, 0.15);
+      border-radius: 16px;
+      max-width: 700px;
+    }
+
+    .info h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #5E8A6E;
+    }
+
+    .info p, .info li {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    .info ul { padding-left: 18px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>App Store Screenshots</h1>
+  <p class="meta">Target: 1242 &times; 2688px &nbsp;|&nbsp; iPhone 6.5" Display &nbsp;|&nbsp; Previews at 50% scale</p>
+
+  <div class="grid">
+    <div class="screen-item">
+      <span class="screen-label">1 &mdash; Home</span>
+      <a class="screen-link" href="screen-1/index.html">
+        <iframe src="screen-1/index.html" scrolling="no" style="transform: scale(0.5); width: 621px; height: 1344px; margin-bottom: -672px; margin-right: -310px;"></iframe>
+      </a>
+      <a class="screen-edit" href="screen-1/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">2 &mdash; AI Personas</span>
+      <a class="screen-link" href="screen-2/index.html">
+        <iframe src="screen-2/index.html" scrolling="no" style="transform: scale(0.5); width: 621px; height: 1344px; margin-bottom: -672px; margin-right: -310px;"></iframe>
+      </a>
+      <a class="screen-edit" href="screen-2/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">3 &mdash; Quick Tools</span>
+      <a class="screen-link" href="screen-3/index.html">
+        <iframe src="screen-3/index.html" scrolling="no" style="transform: scale(0.5); width: 621px; height: 1344px; margin-bottom: -672px; margin-right: -310px;"></iframe>
+      </a>
+      <a class="screen-edit" href="screen-3/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">4 &mdash; Persona Styles</span>
+      <a class="screen-link" href="screen-4/index.html">
+        <iframe src="screen-4/index.html" scrolling="no" style="transform: scale(0.5); width: 621px; height: 1344px; margin-bottom: -672px; margin-right: -310px;"></iframe>
+      </a>
+      <a class="screen-edit" href="screen-4/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">5 &mdash; Brand</span>
+      <a class="screen-link" href="screen-5/index.html">
+        <iframe src="screen-5/index.html" scrolling="no" style="transform: scale(0.5); width: 621px; height: 1344px; margin-bottom: -672px; margin-right: -310px;"></iframe>
+      </a>
+      <a class="screen-edit" href="screen-5/index.html">Open &rarr;</a>
+    </div>
+  </div>
+
+  <!-- ════════════════ iPad ════════════════ -->
+  <h1 style="margin-top: 60px;">iPad Screenshots</h1>
+  <p class="meta">Target: 2064 &times; 2752px &nbsp;|&nbsp; iPad Pro 12.9" &nbsp;|&nbsp; Previews at 45% scale</p>
+
+  <div class="grid">
+    <div class="screen-item">
+      <span class="screen-label">1 &mdash; Home</span>
+      <a class="screen-link" href="ipad-1/index.html">
+        <iframe src="ipad-1/index.html" scrolling="no" style="transform: scale(0.45); width: 722px; height: 963px; margin-bottom: -530px; margin-right: -397px;"></iframe>
+      </a>
+      <a class="screen-edit" href="ipad-1/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">2 &mdash; AI Personas</span>
+      <a class="screen-link" href="ipad-2/index.html">
+        <iframe src="ipad-2/index.html" scrolling="no" style="transform: scale(0.45); width: 722px; height: 963px; margin-bottom: -530px; margin-right: -397px;"></iframe>
+      </a>
+      <a class="screen-edit" href="ipad-2/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">3 &mdash; Quick Tools</span>
+      <a class="screen-link" href="ipad-3/index.html">
+        <iframe src="ipad-3/index.html" scrolling="no" style="transform: scale(0.45); width: 722px; height: 963px; margin-bottom: -530px; margin-right: -397px;"></iframe>
+      </a>
+      <a class="screen-edit" href="ipad-3/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">4 &mdash; Persona Styles</span>
+      <a class="screen-link" href="ipad-4/index.html">
+        <iframe src="ipad-4/index.html" scrolling="no" style="transform: scale(0.45); width: 722px; height: 963px; margin-bottom: -530px; margin-right: -397px;"></iframe>
+      </a>
+      <a class="screen-edit" href="ipad-4/index.html">Open &rarr;</a>
+    </div>
+
+    <div class="screen-item">
+      <span class="screen-label">5 &mdash; Brand</span>
+      <a class="screen-link" href="ipad-5/index.html">
+        <iframe src="ipad-5/index.html" scrolling="no" style="transform: scale(0.45); width: 722px; height: 963px; margin-bottom: -530px; margin-right: -397px;"></iframe>
+      </a>
+      <a class="screen-edit" href="ipad-5/index.html">Open &rarr;</a>
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>How to export</h3>
+    <ul>
+      <li>Click "Open" on any screen to view it individually</li>
+      <li><strong>iPhone:</strong> 621 &times; 1344px at 50% (full: 1242 &times; 2688)</li>
+      <li><strong>iPad:</strong> 826 &times; 1101px at 40% (full: 2064 &times; 2752)</li>
+      <li>To export: browser DevTools &rarr; set device to target resolution &rarr; screenshot</li>
+    </ul>
+  </div>
+
+</body>
+</html>
